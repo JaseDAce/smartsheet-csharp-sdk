@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Smartsheet.Api;
 using Smartsheet.Api.Models;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Smartsheet.Api.Internal;
 
 namespace IntegrationTestSDK
 {
@@ -15,11 +16,11 @@ namespace IntegrationTestSDK
         private Folder folder;
         private Workspace workspace;
 
-        [TestInitialize]
-        public void TestInitialize()
-        {
-            smartsheet = CreateClient();
-        }
+      [TestInitialize]
+      public void TestInitialize()
+      {
+         smartsheet = CreateClient();
+      }
 
         [TestMethod]
         public void TestSheetResources()

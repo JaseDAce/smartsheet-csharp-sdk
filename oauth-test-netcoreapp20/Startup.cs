@@ -31,7 +31,7 @@ namespace oauth_test_netcoreapp20
         {
             if (env.IsDevelopment())
             {
-                app.UseDeveloperExceptionPage();
+                //app.UseDeveloperExceptionPage();
             }
 
             app.UseMvc();
